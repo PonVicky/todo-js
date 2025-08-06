@@ -191,4 +191,7 @@ button:hover {
     min-height: 150px;
     height: auto;
   }
+  #heading {
+    font-family: sans-serif;
+  }
 }

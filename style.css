@@ -1,0 +1,194 @@
+/* color pallets
+   main #d46060
+   grey #f2cfcf
+
+   */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  /* background-color: ; */
+  background-color: #fff;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+button {
+  background-color: #366554;
+  color: #fff;
+  border: none;
+}
+
+#addBtn:hover,
+button:hover {
+  background-color: #fff;
+  color: #222;
+  transition: background-color 0.2s ease-in-out;
+}
+#addBtn:active {
+  transform: scale(0.98); /* Slightly shrink the button */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Reduce shadow to simulate "pressed in" */
+}
+
+#addBtn {
+  /* width: 18%; */
+  background-color: #366554;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 18px;
+}
+
+#main {
+  background-color: #d46060;
+  width: 600px;
+  min-height: 500px;
+  margin: 120px auto;
+  padding: 25px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#heading {
+  background-color: transparent; /* Red with 50% opacity */
+  font-family: fantasy;
+  font-size: 40px;
+  /* background-color: hsl(188, 100%, 63%); */
+  position: absolute;
+  top: -49px;
+  left: 10px;
+}
+
+#inputSection {
+  background-color: #d46060;
+
+  width: 65%;
+  margin: 15px auto 0px auto;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 18px;
+  position: relative;
+}
+
+#box {
+  /* background-color: #eebfbf; */
+  background-color: #f2cfcf;
+  width: 72%;
+  border: none;
+  outline: none;
+  border-radius: 18px;
+  padding-left: 20px;
+}
+
+#decorate {
+  border-top: 2px solid #f2cfcf;
+  margin: 50px auto 25px auto;
+  width: 85%;
+}
+
+#decorate2 {
+  font-size: 19px;
+  color: #f6dfdf;
+  background-color: transparent;
+  position: absolute;
+  bottom: -48px;
+  left: -52px;
+}
+
+#unorderedList {
+  background-color: #d46060;
+  display: flex;
+  flex-direction: column;
+  margin: 5px auto;
+  width: 70%;
+  color: #f6dfdf;
+  font-size: 16px;
+}
+
+#dynamicDiv {
+  color: #f6dfdf;
+  background-color: #d46060;
+  margin-bottom: 10px;
+}
+#dynamicInnerDiv {
+  margin-bottom: 10px;
+  display: flex;
+  background-color: #d46060;
+  justify-content: space-between;
+}
+#dynamicButton {
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  #main {
+    margin-top: 160px;
+    width: 300px;
+    min-height: 180px;
+    height: auto;
+  }
+
+  #heading {
+    font-size: 30px;
+    top: -37px;
+    left: 10px;
+  }
+
+  #inputSection {
+    width: 80%;
+    margin: 0px auto 0px auto;
+  }
+
+  #box {
+    font-size: 14px;
+
+    width: 60%;
+    border: none;
+    outline: none;
+    border-radius: 18px;
+    padding-left: 20px;
+  }
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  #addBtn {
+    width: 25%;
+    background-color: #366554;
+    color: #fff;
+    border: none;
+    padding: 2px;
+    border-radius: 18px;
+  }
+  #decorate {
+    margin: 50px auto 12px auto;
+  }
+  #decorate2 {
+    font-size: 16px;
+    color: #f6dfdf;
+    background-color: transparent;
+    position: absolute;
+    bottom: -48px;
+    left: -2px;
+  }
+
+  #dynamicButton {
+    font-size: 12px;
+    border-radius: 20px;
+  }
+  #dynamicInnerDiv p {
+    font-size: 14px;
+  }
+}
+
+/* Mobile: screen width ≤ 480px */
+@media (max-width: 480px) {
+  #main {
+    margin-top: 150px;
+    width: 250px;
+    min-height: 150px;
+    height: auto;
+  }
+}

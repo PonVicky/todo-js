@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ToDo</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <p id="heading">DO IT!</p>
+      <section id="inputSection">
+        <input type="text" id="box" placeholder="Enter your task" />
+        <button id="addBtn" onclick="addTask()">Add🔥</button>
+        <p id="decorate2">Tasks</p>
+      </section>
+      <div id="decorate"></div>
+      <p id="unorderedList"></p>
+    </div>
+  </body>
+  <script>
+    let n = 0;
+    function addTask() {
+      let task = document.getElementById("box").value;
+      if (task == "") {
+        alert("Empty task!");
+        return;
+      }
+      document.getElementById("box").value = "";
+      document.getElementById("unorderedList").innerHTML += `
+      <div id="dynamicInnerDiv">
+      <p 
+      style = "
+      background-color:#d46060">${task}</p>
+       <button 
+       id= "dynamicButton"
+       onclick="removeTask(this)" 
+       > Delete </button></div>
+       `;
+    }
+
+    del.addEventListener("click", (index) => {
+      task.remove(index);
+      addTask();
+    });
+
+    function removeTask(button) {
+      button.parentElement.remove();
+    }
+  </script>
+</html>
